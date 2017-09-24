@@ -1,0 +1,11 @@
+version: 0.1
+phases:
+  install:
+    commands:
+      - npm install
+      - aws cloudformation package --template-file vendor-manager.yml --s3-bucket haolinj-functions-bucket 
+                                   --output-template-file vendor-manager-output.yml
+artifacts:
+  type: zip
+  files:
+    - vendor-manager-output.yml
