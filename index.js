@@ -1,12 +1,14 @@
+'use strict';
+
 const request = require('request');
 
 exports.handler = function (event, ctx, callback) {
 
   const cookieJar = request.jar();
 
-  const username = event['vendorUsername'];
-  const password = event['vendorPassword'];
-  const vendorStatus = event['vendorStatus'];
+  const username = event.vendorUsername;
+  const password = event.vendorPassword;
+  const vendorStatus = event.vendorStatus;
 
   request.post({
     url: process.env.DATAPOS_LOGIN_URL, jar: cookieJar, body: {
