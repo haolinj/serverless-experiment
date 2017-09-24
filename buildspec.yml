@@ -2,8 +2,8 @@ version: 0.1
 phases:
   install:
     commands:
-      - npm install request
-      - aws cloudformation package --template-file example.yml --s3-bucket haolinj-functions-bucket 
+      - npm install
+      - aws cloudformation package --template-file example.yaml --s3-bucket haolinj-functions-bucket 
                                    --output-template-file serverless-output.yml
 artifacts:
   type: zip
