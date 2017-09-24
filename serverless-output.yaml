@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  TestFunction:
+    Properties:
+      CodeUri: s3://haolinj-functions-bucket/1a6ceb9e1af03bf49bc42124a54c46ed
+      Environment:
+        Variables:
+          S3_BUCKET: haolinj-functions-bucket
+      Handler: index.handler
+      Runtime: nodejs6.10
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31
