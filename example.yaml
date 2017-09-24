@@ -9,3 +9,4 @@ Resources:
       Environment:
         Variables: 
           S3_BUCKET: haolinj-functions-bucket
+          

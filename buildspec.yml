@@ -10,3 +10,5 @@ artifacts:
   files:
     - serverless-output.yaml
     - example.yaml
+    - index.js
+    - package.json
