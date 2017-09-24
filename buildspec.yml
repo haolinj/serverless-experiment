@@ -3,9 +3,9 @@ phases:
   install:
     commands:
       - npm install
-      - aws cloudformation package --template-file example.yaml --s3-bucket haolinj-functions-bucket 
-                                   --output-template-file serverless-output.yaml
+      - aws cloudformation package --template-file vendor-manager.yaml --s3-bucket ${S3_BUCKET} 
+                                   --output-template-file vendor-manager-output.yaml
 artifacts:
   type: zip
   files:
-    - serverless-output.yaml
+    - vendor-manager-output.yaml

@@ -1,12 +1,14 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Resources:
-  TestFunction:
+  VendorManagerFunction:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
       Runtime: nodejs6.10
       Environment:
         Variables: 
-          S3_BUCKET: haolinj-functions-bucket
+          S3_BUCKET: ${S3_BUCKET}
+          DATAPOS_LOGIN_URL: ${DATAPOS_LOGIN_URL}
+          DATAPOS_VENDOR_MANAGE_URL: ${DATAPOS_VENDOR_MANAGE_URL}
           
