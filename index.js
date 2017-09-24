@@ -1,4 +1,4 @@
-// var request = require('request');
+var request = require('request');
 
 console.log('Starting my function');
 
