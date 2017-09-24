@@ -11,13 +11,13 @@ exports.handler = function (event, ctx, callback) {
   const vendorStatus = event.vendorStatus;
 
   request.post({
-    url: process.env.DATAPOS_LOGIN_URL, jar: cookieJar, body: {
+    url: process.env.DATAPOS_LOGIN_URL, jar: cookieJar, body: JSON.stringify({
       username: username,
       password: password
-    }
+    })
   });
 
-  request.post({ url: process.env.DATAPOS_VENDOR_MANAGE_URL + vendorStatus, body: {}, jar: cookieJar }, function (err, res, body) {
+  request.post({ url: process.env.DATAPOS_VENDOR_MANAGE_URL + vendorStatus, body: JSON.stringify({}), jar: cookieJar }, function (err, res, body) {
     console.log(res, body);
   });
 
