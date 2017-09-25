@@ -1,5 +1,5 @@
 {
-  "vendorUsername": "brod",
-  "vendorPassword": "brod1234",
-  "vendorStatus": "pause"
+  "vendorUsername": "",
+  "vendorPassword": "",
+  "vendorStatus": "" // pause, resume, open, close
 }

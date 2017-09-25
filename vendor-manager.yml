@@ -8,7 +8,7 @@ Resources:
       Runtime: nodejs6.10
       Environment:
         Variables: 
-          S3_BUCKET: haolinj-functions-bucket
-          DATAPOS_LOGIN_URL: http://client-portal.datapos.staging.agiledigital.co/qfx-api/v1/current-vendor/login
-          DATAPOS_VENDOR_MANAGE_URL: http://client-portal.datapos.staging.agiledigital.co/qfx-api/v1/current-vendor/store/
+          S3_BUCKET: haolinj-functions-bucket # configure with your own S3 bucket.
+          DATAPOS_LOGIN_URL: http://client-portal.datapos.staging.agiledigital.co/qfx-api/v1/current-vendor/login # change this based on your environment, dev or prod.
+          DATAPOS_VENDOR_MANAGE_URL: http://client-portal.datapos.staging.agiledigital.co/qfx-api/v1/current-vendor/store/ # change this based on your environment, dev or prod.
           
