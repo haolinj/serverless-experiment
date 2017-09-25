@@ -9,6 +9,6 @@ Resources:
       Environment:
         Variables: 
           S3_BUCKET: haolinj-functions-bucket
-          DATAPOS_LOGIN_URL: http://client-portal.datapos.staging.agiledigital.co/qfx-api/v1/current-vendor/logout
+          DATAPOS_LOGIN_URL: http://client-portal.datapos.staging.agiledigital.co/qfx-api/v1/current-vendor/login
           DATAPOS_VENDOR_MANAGE_URL: http://client-portal.datapos.staging.agiledigital.co/qfx-api/v1/current-vendor/store/
           
