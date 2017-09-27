@@ -32,11 +32,13 @@ exports.handler = function (event, ctx, callback) {
           }
           else {
             if (res.statusCode === 200) {
-              var payload = { "text": 'Vendor Manager Function changed Vendor Status to [' + vendorStatus + '].' };
+              var payload = { "text": 'Vendor Manager Function changed Vendor [' + username + '] Status to [' + vendorStatus + '].' };
 
               request.post(process.env.DATAPOS_SLACK_WEBHOOK_URL, { json: payload }, function (err, res, b) {
                 console.log('Notified Slack: ', b);
               });
+
+              console.log('Successfully changed Vendor [' + username + '] status to [' + vendorStatus + '], response [' + res + '].');
 
               callback(null, { result: 'Successfully changed Vendor [' + username + '] status to [' + vendorStatus + '].' });
             }
