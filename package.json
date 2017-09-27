@@ -1,7 +1,7 @@
 {
-  "name": "serverless-experiment",
+  "name": "vendor-manager-lambda",
   "version": "0.0.1",
-  "description": "AWS serverless solution experiment",
+  "description": "AWS Lambda to manage DataPOS Vendor status",
   "main": "index.js",
   "dependencies": {
     "request": "2.82.0"
@@ -10,14 +10,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/haolinj/serverless-experiment.git"
-  },
-  "author": "Haolin Jiang",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/haolinj/serverless-experiment/issues"
-  },
-  "homepage": "https://github.com/haolinj/serverless-experiment#readme"
+  "author": "Haolin Jiang"
 }

@@ -8,3 +8,10 @@ This project is set up with auto deployment on AWS based on this tutorial: http:
 - index.js: AWS Lambda function with nodejs, see http://docs.aws.amazon.com/lambda/latest/dg/nodejs-prog-model-handler.html
 
 To invoke the deployed Lambda function, See http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/browser-invoke-lambda-function-full.html
+
+You can invoke this function locally by using https://github.com/awslabs/aws-sam-local
+
+e.g. 
+```
+sam local invoke -e sample-event.json -t vendor-manager.yml
+```
