@@ -9,6 +9,6 @@ Resources:
       Environment:
         Variables: 
           S3_BUCKET: haolinj-functions-bucket # configure with your own S3 bucket.
-          DATAPOS_LOGIN_URL: http://client-portal.datapos.staging.agiledigital.co/qfx-api/v1/current-vendor/login # change this based on your environment, dev or prod.
-          DATAPOS_VENDOR_MANAGE_URL: http://client-portal.datapos.staging.agiledigital.co/qfx-api/v1/current-vendor/store/ # change this based on your environment, dev or prod.
-          DATAPOS_SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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 # change to your own Slack webhook URL.
+          DATAPOS_LOGIN_URL: https://..... # change this based on your environment, dev or prod.
+          DATAPOS_VENDOR_MANAGE_URL: https://..... # change this based on your environment, dev or prod.
+          DATAPOS_SLACK_WEBHOOK_URL: https://..... # change to your own Slack webhook URL.
